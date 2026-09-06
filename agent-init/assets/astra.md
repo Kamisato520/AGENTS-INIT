@@ -1,3 +1,4 @@
+<!-- Source: https://developers.openai.com/api/docs/guides/latest-model#gpt-6-astra-personality-and-writing-style -->
 <!-- AGENT-INIT:START -->
 ## Agent Behavior
 
