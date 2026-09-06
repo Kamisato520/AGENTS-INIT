@@ -1,0 +1,4 @@
+interface:
+  display_name: "AGENT-INIT"
+  short_description: "Add Astra-aligned guidance to AGENTS.md"
+  default_prompt: "Use $agent-init after /init to add or refresh the compact GPT-6 Astra aligned behavior block in this repository's AGENTS.md."
