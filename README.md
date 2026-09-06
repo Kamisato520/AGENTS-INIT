@@ -45,9 +45,13 @@ Running `$agent-init` again updates that block without duplicating it or overwri
 
 ## Why this exists
 
-OpenAI's Astra guidance says the model can be especially sensitive to instructions found in skills and files such as `AGENTS.md`, and recommends making those instructions deliberate and easy to audit. The same guide recommends prompting Astra toward stronger follow-through, clearer instruction precedence, plain technical communication, and testing effort that matches the change. citeturn137012view0 citeturn137012view2
+OpenAI's Astra guidance notes that the model can be especially sensitive to instructions found in skills and files such as `AGENTS.md`. It recommends making instruction priority explicit and tuning initiative, writing style, and testing behavior for the workflow.
 
-AGENTS-INIT packages those recommendations into a small project-level block instead of consuming global prompt context.
+One of the official prompt recommendations is:
+
+> “The user's instructions take precedence over guidelines provided in a skill.”
+
+AGENTS-INIT packages the relevant guidance into a small project-level block instead of consuming global prompt context.
 
 ## OpenAI guidance
 
@@ -80,7 +84,7 @@ The managed block stays intentionally small. It covers:
 - using clear, concise technical language with the main point early;
 - keeping testing and verification proportional to the change.
 
-The wording is kept close to the intent of OpenAI's published prompts while remaining compact enough for a project-level instruction file.
+The wording stays close to the intent of OpenAI's published prompts while remaining compact enough for a project-level instruction file.
 
 ## Repository layout
 
@@ -95,6 +99,6 @@ agent-init/
     └── apply_agent_init.py
 ```
 
-## License and attribution
+## Attribution
 
-AGENTS-INIT is an independent community project and is not affiliated with or endorsed by OpenAI. The linked guidance and screenshots are sourced from the public OpenAI developer documentation. GPT-6 Astra, Codex, and OpenAI are trademarks or product names of OpenAI.
+AGENTS-INIT is an independent community project and is not affiliated with or endorsed by OpenAI. The linked guidance and screenshots are sourced from the public OpenAI developer documentation. GPT-6 Astra, Codex, and OpenAI are product names or trademarks of OpenAI.
